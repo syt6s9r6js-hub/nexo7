@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>NEXO7</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      background: #07110b;
+      color: white;
+    }
+
+    header {
+      background: #0b1f12;
+      padding: 18px 20px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      border-bottom: 1px solid #1d542d;
+    }
+
+    .logo {
+      font-size: 28px;
+      font-weight: bold;
+      color: #25e65b;
+    }
+
+    .logo span {
+      color: white;
+    }
+
+    .login {
+      background: #25e65b;
+      color: #031007;
+      border: none;
+      padding: 11px 18px;
+      border-radius: 8px;
+      font-weight: bold;
+    }
+
+    .hero {
+      padding: 45px 20px;
+      text-align: center;
+      background:
+        radial-gradient(circle at center, #174d28 0%, #07110b 65%);
+    }
+
+    .hero h1 {
+      font-size: 38px;
+      margin-bottom: 12px;
+    }
+
+    .hero h1 span {
+      color: #25e65b;
+    }
+
+    .hero p {
+      color: #b9c8bd;
+      font-size: 16px;
+      margin-bottom: 25px;
+    }
+
+    .button {
+      display: inline-block;
+      background: #25e65b;
+      color: #031007;
+      text-decoration: none;
+      padding: 14px 28px;
+      border-radius: 9px;
+      font-weight: bold;
+    }
+
+    .container {
+      max-width: 1000px;
+      margin: auto;
+      padding: 25px 18px;
+    }
+
+    .title {
+      font-size: 24px;
+      margin-bottom: 18px;
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+      gap: 15px;
+    }
+
+    .card {
+      background: #0d1d13;
+      border: 1px solid #1b4828;
+      border-radius: 12px;
+      padding: 20px;
+    }
+
+    .card .icon {
+      font-size: 38px;
+      margin-bottom: 12px;
+    }
+
+    .card h3 {
+      margin-bottom: 8px;
+    }
+
+    .card p {
+      color: #a9b8ae;
+      font-size: 14px;
+      line-height: 1.5;
+    }
+
+    footer {
+      margin-top: 35px;
+      padding: 25px;
+      text-align: center;
+      background: #050b07;
+      color: #89968d;
+      font-size: 13px;
+    }
+
+    @media (max-width: 600px) {
+      .hero h1 {
+        font-size: 30px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <div class="logo">NEXO<span>7</span> 🎰</div>
+    <button class="login" onclick="entrar()">ENTRAR</button>
+  </header>
+
+  <section class="hero">
+    <h1>Bem-vindo ao <span>NEXO7</span></h1>
+
+    <p>
+      Sua plataforma de entretenimento online.
+    </p>
+
+    <a href="#opcoes" class="button">
+      COMEÇAR
+    </a>
+  </section>
+
+  <main class="container" id="opcoes">
+
+    <h2 class="title">Escolha uma opção</h2>
+
+    <div class="cards">
+
+      <div class="card">
+        <div class="icon">🎰</div>
+        <h3>Jogos</h3>
+        <p>
+          Área demonstrativa para jogos e entretenimento.
+        </p>
+      </div>
+
+      <div class="card">
+        <div class="icon">🎁</div>
+        <h3>Promoções</h3>
+        <p>
+          Confira as novidades e campanhas disponíveis.
+        </p>
+      </div>
+
+      <div class="card">
+        <div class="icon">👤</div>
+        <h3>Minha conta</h3>
+        <p>
+          Área reservada para gerenciamento da conta.
+        </p>
+      </div>
+
+    </div>
+
+  </main>
+
+  <footer>
+    © 2026 NEXO7 — Página demonstrativa.
+  </footer>
+
+  <script>
+    function entrar() {
+      alert("Área de login — demonstração.");
+    }
+  </script>
+
+</body>
+</html>
